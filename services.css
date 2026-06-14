@@ -1,0 +1,155 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+a {
+    text-decoration: none;
+    color: #e2e8f0;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #38bdf8;
+}
+
+body > a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #cbd5f5;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* SERVICES SECTION */
+h3 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 1.8rem;
+}
+
+ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    list-style: none;
+}
+
+ul li {
+    background: #1e293b;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #38bdf8;
+}
+
+/* FORM */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #1e293b;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+label {
+    font-size: 0.9rem;
+    color: #cbd5f5;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input:focus, select:focus {
+    border: 2px solid #38bdf8;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0ea5e9;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    ul, form {
+        width: 90%;
+    }
+}
